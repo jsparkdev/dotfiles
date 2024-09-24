@@ -73,7 +73,7 @@
     "metrics": false
   },
   "terminal": {
-    "font_size": 12,
+    "font_size": 12, // Linux: 14
     "line_height": "standard",
     "blinking": "on",
     "working_directory": {
@@ -97,9 +97,9 @@
   },
   "unnecessary_code_fade": 0.7,
   "base_keymap": "VSCode",
-  "ui_font_size": 13,
+  "ui_font_size": 13, // Linux: 16
   "ui_font_family": "JetBrains Mono",
-  "ui_font_weight": 700,
+  "ui_font_weight": 700, // Linux: 600
   "theme": {
     "mode": "dark",
     "light": "Andromeda",
@@ -108,4 +108,12 @@
   "features": {
     "inline_completion_provider": "supermaven"
   }
+  // Additional settings for Linux
+  // "experimental.theme_overrides": {
+  //   "syntax": {
+  //     "link_text": {
+  //       "font_style": "normal"
+  //     }
+  //   }
+  // }
 }
