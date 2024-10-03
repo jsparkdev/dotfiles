@@ -1,8 +1,11 @@
 {
-  "autosave": "on_focus_change",
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 3000
+    }
+  },
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_weight": 600,
-  "confirm_quit": true,
   "inline_completions": {
     "disabled_globs": [".env", ".md", ".mdx"]
   },
@@ -13,52 +16,11 @@
     "show_nav_history_buttons": false
   },
   "tabs": {
+    "file_icons": true,
     "git_status": true
   },
   "toolbar": {
     "quick_actions": false
-  },
-  "languages": {
-    "TypeScript": {
-      "code_actions_on_format": {
-        "source.organizeImports": true,
-        "source.fixAll": true
-      }
-    },
-    "TSX": {
-      "code_actions_on_format": {
-        "source.organizeImports": true,
-        "source.fixAll": true
-      }
-    },
-    "Astro": {
-      "code_actions_on_format": {
-        "source.organizeImports": true,
-        "source.fixAll": true,
-        "source.fixAll.eslint": true
-      }
-    },
-    "JavaScript": {
-      "code_actions_on_format": {
-        "source.organizeImports": true,
-        "source.fixAll.eslint": true
-      }
-    },
-    "JSX": {
-      "code_actions_on_format": {
-        "source.organizeImports": true,
-        "source.fixAll.eslint": true
-      }
-    }
-  },
-  "lsp": {
-    "eslint": {
-      "settings": {
-        "codeActionOnSave": {
-          "rules": ["import/order"]
-        }
-      }
-    }
   },
   "always_treat_brackets_as_autoclosed": true,
   "indent_guides": {
@@ -73,9 +35,10 @@
     "metrics": false
   },
   "terminal": {
-    "font_size": 12, // Linux: 14
+    "font_size": 14,
     "line_height": "standard",
     "blinking": "on",
+    "copy_on_select": true,
     "working_directory": {
       "always": {
         "directory": "~/code"
@@ -97,9 +60,9 @@
   },
   "unnecessary_code_fade": 0.7,
   "base_keymap": "VSCode",
-  "ui_font_size": 13, // Linux: 16
+  "ui_font_size": 16,
   "ui_font_family": "JetBrains Mono",
-  "ui_font_weight": 700, // Linux: 600
+  "ui_font_weight": 600,
   "theme": {
     "mode": "dark",
     "light": "Andromeda",
@@ -107,13 +70,12 @@
   },
   "features": {
     "inline_completion_provider": "supermaven"
+  },
+  "experimental.theme_overrides": {
+    "syntax": {
+      "link_text": {
+        "font_style": "normal"
+      }
+    }
   }
-  // Additional settings for Linux
-  // "experimental.theme_overrides": {
-  //   "syntax": {
-  //     "link_text": {
-  //       "font_style": "normal"
-  //     }
-  //   }
-  // }
 }
