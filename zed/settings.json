@@ -1,35 +1,56 @@
 {
+  "always_treat_brackets_as_autoclosed": true,
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-20240620"
+    },
+    "version": "2"
+  },
   "autosave": {
     "after_delay": {
       "milliseconds": 3000
     }
   },
+  "base_keymap": "VSCode",
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_weight": 600,
-  "inline_completions": {
-    "disabled_globs": [".env", ".md", ".mdx"]
+  "experimental.theme_overrides": {
+    "syntax": {
+      "link_text": {
+        "font_style": "normal"
+      }
+    }
   },
-  "scrollbar": {
-    "show": "always"
+  "features": {
+    "inline_completion_provider": "supermaven"
   },
-  "tab_bar": {
-    "show_nav_history_buttons": false
-  },
-  "tabs": {
-    "file_icons": true,
-    "git_status": true
-  },
-  "toolbar": {
-    "quick_actions": false
-  },
-  "always_treat_brackets_as_autoclosed": true,
   "indent_guides": {
     "coloring": "disabled",
     "background_coloring": "indent_aware"
   },
+  "inline_completions": {
+    "disabled_globs": [".env", ".md", ".mdx"]
+  },
+  "project_panel": {
+    "indent_size": 12,
+    "scrollbar": {
+      "show": "never"
+    }
+  },
+  "scrollbar": {
+    "show": "always"
+  },
   "show_whitespaces": "none",
   "soft_wrap": "editor_width",
+  "tab_bar": {
+    "show_nav_history_buttons": false
+  },
   "tab_size": 2,
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false
@@ -45,37 +66,16 @@
       }
     }
   },
-  "project_panel": {
-    "indent_size": 12,
-    "scrollbar": {
-      "show": "never"
-    }
-  },
-  "assistant": {
-    "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-20240620"
-    },
-    "version": "2"
-  },
-  "unnecessary_code_fade": 0.7,
-  "base_keymap": "VSCode",
-  "ui_font_size": 16,
-  "ui_font_family": "JetBrains Mono",
-  "ui_font_weight": 600,
   "theme": {
     "mode": "dark",
-    "light": "Andromeda",
-    "dark": "Andromeda"
+    "light": "Ayu Dark",
+    "dark": "Ayu Dark"
   },
-  "features": {
-    "inline_completion_provider": "supermaven"
+  "toolbar": {
+    "quick_actions": false
   },
-  "experimental.theme_overrides": {
-    "syntax": {
-      "link_text": {
-        "font_style": "normal"
-      }
-    }
-  }
+  "ui_font_family": "JetBrains Mono",
+  "ui_font_size": 16,
+  "ui_font_weight": 600,
+  "unnecessary_code_fade": 0.7
 }
